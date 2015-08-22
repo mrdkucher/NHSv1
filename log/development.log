@@ -1,0 +1,422 @@
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (15.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateHourLogs (20150821003837)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "hour_logs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "assignment" varchar(255), "hours" varchar(255), "supervisor" varchar(255), "date" varchar(255), "status" varchar(255), "User_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150821003837"]]
+  [1m[35m (6.0ms)[0m  commit transaction
+Migrating to CreateUsers (20150821004019)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "password_digest" varchar(255), "role" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150821004019"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Migrating to Fixcolumn1 (20150821004205)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150821004205"]]
+  [1m[36m (19.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to Fixcolumn1 (20150821004205)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to Fixcolumn1 (20150821004205)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (62.4ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150821004205'
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Fixcolumn1 (20150821004205)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TEMPORARY TABLE "ahour_logs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "assignment" varchar(255), "hours" varchar(255), "supervisor" varchar(255), "date" varchar(255), "status" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "hour_logs"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "hour_logs"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "hour_logs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "assignment" varchar(255), "hours" varchar(255), "supervisor" varchar(255), "date" varchar(255), "status" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "ahour_logs"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "ahour_logs"
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150821004205"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 19:53:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7595ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x5c844d8>:0x5c8f998>):
+    58: 
+    59:     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    60: 
+    61:       <% if current_user && current_user.admin?%>
+    62:           <ul class="nav navbar-nav navbar-right">
+    63:             <li><a class="page-scroll" href='/hours/new'>Welcome, <%= current_user.first_name + " " +current_user.last_name%>!</a></li>
+    64:             <li><a class="page-scroll" id="sidebarappear" href='/hours'>Requests</a></li>
+  app/views/layouts/application.html.erb:61:in `_app_views_layouts_application_html_erb__864965116_48701580'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 19:54:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 739ms (Views: 719.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+
+Started GET "/assets/header.jpg" for 127.0.0.1 at 2015-08-20 19:54:34 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/header.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 490ms (Views: 489.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:39 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/assets/header.jpg" for 127.0.0.1 at 2015-08-20 19:55:40 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-08-20 19:55:44 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 505ms (Views: 492.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-08-20 19:56:03 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aN9YI77rMP5Sn5S5uNRaCXsxiJGZQ+1f2RbJe4IpZUw=", "user"=>{"first_name"=>"David", "last_name"=>"Kucher", "email"=>"2162580@glenbard.org", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "role", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-08-21 00:56:03.444970"], ["email", "2162580@glenbard.org"], ["first_name", "David"], ["last_name", "Kucher"], ["password_digest", "$2a$10$bYcURn/iQKzN.SpN9GId1.vlr6MbrVfarOZz820PojKpVfNua5lt."], ["role", "User"], ["updated_at", "2015-08-21 00:56:03.444970"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/hours/new
+Completed 302 Found in 146ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-20 19:56:03 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 1]]
+  [1m[36mHourLog Load (1.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered hours/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 564ms (Views: 507.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500

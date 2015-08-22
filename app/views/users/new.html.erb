@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container">
+        <h2 class="form-signin-heading">Sign Up For An Account</h2>
+        <%=form_for(@user, url: users_path, method: :post, html:{class:"form-signin"}) do |f|%>
+        <%= f.text_field :first_name, :placeholder => 'First name' %>
+        <%= f.text_field :last_name, :placeholder => 'Last name' %>
+        <%= f.email_field :email, :placeholder => 'Email' %>
+        <%= f.password_field :password, :placeholder => 'Password' %>
+        <%=f.submit 'Sign Up', class: 'btn btn-lg btn-primary btn-block'%>
+        <%end%>
+</div>
+
+</body>
+
+</html>

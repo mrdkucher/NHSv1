@@ -1,0 +1,108 @@
+<body id="dash">
+  <div class="container-fluid">
+    <div class="flex-container">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" id="dashtext">
+            <ul class="nav nav-sidebar">
+                <li><a href='/hours/new' style= "color: #fff">Hours</a></li>
+                <li class="active"><a href='/hours'>Requests</a></li>
+                <li ><a href='/users' style= "color: #fff">Users</a></li>
+        <!--            <li><a href="#">Reports</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Export</a></li>         -->
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h1 class="page-header" id="dashtext">User Hours</h1>
+      <!--
+                <div class="row placeholders">
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                </div>
+      -->
+      <h2 class="sub-header" id="dashtext">Pending Hours</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr id="dashtexttable">
+            <th>User</th>
+            <th>Assignment</th>
+            <th>Hours</th>
+            <th>Supervisor/Location</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @allhours.each do |hour| %>
+              <tr id="dashfield">
+                <td><%= hour.user.first_name + " " +hour.user.last_name %></td>
+                <td><%= hour.assignment %></td>
+                <td><%= hour.hours %></td>
+                <td><%= hour.supervisor %></td>
+                <td><%= hour.date %></td>
+                <td><%= link_to "See Log", hour_path(hour.id)%></td>
+              </tr>
+          <% end %>
+          </tbody>
+          </table>
+        </div>
+
+      <h2 class="sub-header" id="dashtext">Confirmed Hours</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr id="dashtext">
+              <th>User</th>
+              <th>Assignment</th>
+              <th>Hours</th>
+              <th>Supervisor/Location</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+            </thead>
+          <% @allconfirm.each do |hour| %>
+              <tr id="dashfield">
+                <td><%= hour.user.first_name + " " +hour.user.last_name %></td>
+                <td><%= hour.assignment %></td>
+                <td><%= hour.hours %></td>
+                <td><%= hour.supervisor %></td>
+                <td><%= hour.date %></td>
+                <td><%= link_to "See Log", hour_path(hour.id)%></td>
+              </tr>
+          <% end %>
+            <tr>
+              <td style="font-weight: bolder">Total Hours:</td>
+              <td style="font-weight: bolder"><%= @alltotal %></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
