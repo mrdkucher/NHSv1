@@ -5,7 +5,6 @@ In order to launch again:
 set secret key for production in secrets.yml
 precompile assets
 take out the "-x86-mingw32" in gemfile.lock on the gems
-add gem passenger
 
 follow instructions in passenger's guide
 
