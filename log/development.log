@@ -420,3 +420,1938 @@ Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -05
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 19:56:04 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:52:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 3811ms (Views: 3787.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/assets/header.jpg" for 127.0.0.1 at 2015-08-22 15:52:28 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-08-22 15:52:34 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 556ms (Views: 532.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-08-22 15:52:56 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "user"=>{"first_name"=>"your", "last_name"=>"mom", "email"=>"your@mom.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "role", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-08-22 20:52:56.588338"], ["email", "your@mom.com"], ["first_name", "your"], ["last_name", "mom"], ["password_digest", "$2a$10$g73eiPnC2JzwiKGJByJWgeenvwx1dek1CGLsYnnTUmd/Kyqmn95j2"], ["role", "User"], ["updated_at", "2015-08-22 20:52:56.588338"]]
+  [1m[35m (6.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/hours/new
+Completed 302 Found in 184ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:52:56 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (1.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 603ms (Views: 505.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:52:57 -0500
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:53:30 -0500
+Processing by HoursController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 469ms (Views: 462.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:30 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:30 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:53:31 -0500
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 489ms (Views: 474.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:09 -0500
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 477ms (Views: 476.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:34 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:35 -0500
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-22 15:54:36 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 533ms (Views: 532.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2015-08-22 15:54:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "session"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'test@test.com' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-22 15:54:42 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 517ms (Views: 517.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:43 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2015-08-22 15:54:50 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "session"=>{"email"=>"2162580@glenbard.org", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = '2162580@glenbard.org' LIMIT 1[0m
+Redirected to http://localhost:3000/hours/new
+Completed 302 Found in 130ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:54:50 -0500
+Processing by HoursController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 1]]
+  Rendered hours/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 484ms (Views: 476.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:54:51 -0500
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-08-22 15:55:00 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:55:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 518ms (Views: 517.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:01 -0500
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-22 15:55:03 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 481ms (Views: 480.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "session"=>{"email"=>"me@me.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'me@me.com' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 515ms (Views: 515.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:08 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:55:09 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2015-08-22 15:56:11 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "session"=>{"email"=>"your@mom.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'your@mom.com' LIMIT 1
+Redirected to http://localhost:3000/hours/new
+Completed 302 Found in 121ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:56:11 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 481ms (Views: 476.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:56:12 -0500
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 15:56:14 -0500
+Processing by HoursController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"[0m
+  [1m[35mHourLog Load (1.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  Rendered hours/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 560ms (Views: 553.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 15:56:15 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 497ms (Views: 494.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 15:56:17 -0500
+Processing by HoursController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'[0m
+  [1m[35mHourLog Load (1.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  [1m[36m (1.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  Rendered hours/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 488ms (Views: 482.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:56:19 -0500
+Processing by HoursController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 526ms (Views: 512.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:58:29 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (1.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 533ms (Views: 514.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:58:30 -0500
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 15:58:40 -0500
+Processing by HoursController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"[0m
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  Rendered hours/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 469ms (Views: 464.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 15:58:41 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 543ms (Views: 537.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:58:46 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (1.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 578ms (Views: 560.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 15:58:47 -0500
+Processing by HoursController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"[0m
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  Rendered hours/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 466ms (Views: 460.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 15:58:49 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 505ms (Views: 495.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 15:58:51 -0500
+Processing by HoursController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'[0m
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  Rendered hours/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 466ms (Views: 461.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 15:58:53 -0500
+Processing by HoursController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 462ms (Views: 455.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 16:02:26 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 489ms (Views: 472.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 16:02:28 -0500
+Processing by HoursController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"
+  [1m[36mHourLog Load (1.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'[0m
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  Rendered hours/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 505ms (Views: 492.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 16:02:29 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 476ms (Views: 473.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 16:02:32 -0500
+Processing by HoursController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"[0m
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  Rendered hours/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 476ms (Views: 469.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 16:02:33 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 524ms (Views: 507.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-08-22 16:04:13 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:04:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 571ms (Views: 570.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:14 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-08-22 16:04:16 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 536ms (Views: 533.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-08-22 16:04:28 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "user"=>{"first_name"=>"delete", "last_name"=>"delete", "email"=>"delete@delete.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "role", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-08-22 21:04:28.596418"], ["email", "delete@delete.com"], ["first_name", "delete"], ["last_name", "delete"], ["password_digest", "$2a$10$Iqn.CK5IktpEZ4K7ip4l5ezHPaVj6KUiOzX2LDhBevu1LXsZR.882"], ["role", "User"], ["updated_at", "2015-08-22 21:04:28.596418"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/hours/new
+Completed 302 Found in 139ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 16:04:28 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 3]]
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered hours/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 505ms (Views: 499.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:29 -0500
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-08-22 16:04:45 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:04:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 529ms (Views: 528.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:04:46 -0500
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-22 16:06:14 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 528ms (Views: 526.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "session"=>{"email"=>"your@mom.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'your@mom.com' LIMIT 1
+Redirected to http://localhost:3000/hours/new
+Completed 302 Found in 122ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 458ms (Views: 452.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:49 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:50 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 16:06:51 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 503ms (Views: 498.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2015-08-22 16:06:55 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 511ms (Views: 504.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2015-08-22 16:06:58 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TCTMyFSi7eLbxA5nlUn02NySbD/GOuSyGBAkD5xczKE=", "id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (68.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 76ms (ActiveRecord: 69.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-22 16:06:58 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 494ms (Views: 491.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/creative.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/animate.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/hours.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/signin.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/creative.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/cbpAnimatedHeader.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/hours.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/wow.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:59 -0500
+
+
+Started GET "/hours" for 127.0.0.1 at 2015-08-22 16:07:02 -0500
+Processing by HoursController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"[0m
+  [1m[35mHourLog Load (0.0ms)[0m  SELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Pending'
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'[0m
+  [1m[35m (1.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."status" = 'Confirmed'
+  Rendered hours/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 548ms (Views: 530.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2015-08-22 16:07:06 -0500
+Processing by HoursController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT SUM("hour_logs"."hours") AS sum_id FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?  [["user_id", 2]]
+  [1m[36mHourLog Load (0.0ms)[0m  [1mSELECT "hour_logs".* FROM "hour_logs"  WHERE "hour_logs"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered hours/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 501ms (Views: 496.0ms | ActiveRecord: 0.0ms)
