@@ -154,7 +154,7 @@ hr {
         color: #666666;
         border: 1px solid #E6E6E6;
         border-radius: 5px;
-        height: 60px;
+        height: 30px;
         margin: 6px auto;
         text-indent: 10px;
     }
@@ -178,7 +178,7 @@ hr {
     }
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 767px) {
     .newhourform input[type=text],
     .newhourform input[type=email],
     .newhourform input[type=password],
