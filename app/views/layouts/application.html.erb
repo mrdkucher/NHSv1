@@ -68,6 +68,7 @@
       <%elsif current_user%>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="page-scroll" href='/hours/new'>Welcome, <%= current_user.first_name + " " +current_user.last_name%>!</a></li>
+            <li><a class="page-scroll" id="sidebarappear" href='/leaderboard'>Leaderboard</a></li>
             <li><%=link_to 'Log Out', logout_path, method: :delete, class: "page-scroll"%></li>
           </ul>
       <%else%>
