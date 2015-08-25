@@ -29,7 +29,12 @@ class UsersController < ApplicationController
     end
   end
   def destroy
-    @userdelete = User.find(params[:id]).destroy
+    @userdelete = User.find(params[:id])
+    @hourdelete = HourLog.where(user_id: @userdelete.id)
+    @hourdelete.each do |delete|
+      delete.destroy
+    end
+    @userdelete.destroy
     redirect_to '/users'
   end
   private
