@@ -52,7 +52,7 @@
           <% @allusers.defaultuser.each do |user| %>
               <tr id="dashfield">
                 <td><%= user.first_name + " " + user.last_name %></td>
-                <td><%= user.hour_logs.sum(:hours) %></td>
+                <td><%= user.hour_logs.where(status: "Confirmed").sum(:hours)%></td>
               </tr>
           <% end %>
 
