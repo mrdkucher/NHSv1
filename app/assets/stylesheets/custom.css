@@ -1,3 +1,14 @@
+#essay{
+    background-image:none;
+    background-color: #333333;
+}
+
+#essayh1 {
+    font-size: 50px;
+    color:white;
+    text-align: center;
+}
+
 #nhslogo {
     width: 120px;
     margin-top: 0px;
