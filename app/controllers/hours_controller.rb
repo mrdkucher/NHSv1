@@ -21,7 +21,7 @@ class HoursController < ApplicationController
   def new
     @hour = current_user.hour_logs.new
     @entry = current_user.hour_logs.all
-    @total = current_user.hour_logs.sum(:hours)
+    @total = current_user.hour_logs.where(status:"Confirmed").sum(:hours)
   end
   def create
     @hour = HourLog.new(hour_params)
