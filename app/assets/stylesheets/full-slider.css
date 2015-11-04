@@ -6,7 +6,7 @@
 
 html,
 body {
-    width: 100%;
+    height: 100%;
 }
 
 #myCarousel {
@@ -17,7 +17,7 @@ body {
 .carousel,
 .item,
 .active {
-    width: 100%;
+    height: 100%;
 }
 
 .carousel-inner {
