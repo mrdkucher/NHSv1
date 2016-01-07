@@ -39,6 +39,7 @@
                 </div>
       -->
       <div class="table-responsive">
+        <%= form_for :hour_log, method: :put do |f| %>
         <table class="table table-striped">
           <thead>
           <tr id="dashtexttable">
@@ -51,26 +52,26 @@
             <th></th>
           </tr>
           </thead>
-          <tbody>
-          <% if @status === 'Pending'%>
-              <td><%= @hour.user.first_name + ' ' + @hour.user.last_name  %></td>
-              <%= form_for :hour_log, method: :put do |f| %>
-                  <td><%= f.text_field :assignment, :value => @hour.assignment %></td>
-                  <td><%= f.number_field :hours, in: 0.5..12.0, step: 0.5, :value => @hour.hours %></td>
-                  <td> <%= f.text_field :supervisor, :value => @hour.supervisor %></td>
-                  <td><%= f.date_field :date, :value => @hour.date %></td>
-                  <td><%= f.hidden_field :status, :value => 'Confirmed'%>
-                    <%= f.submit 'Update'%></td>
-              <%end%>
-          <%else%>
-              <td><%= @hour.user.first_name + ' ' + @hour.user.last_name  %></td>
-              <td><%= @hour.assignment  %></td>
-              <td><%= @hour.hours  %></td>
-              <td><%= @hour.supervisor %></td>
-              <td><%= @hour.date %></td>
-              <td><%= @status %></td>
-          <%end%>
 
+              <tbody>
+              <tr id="dashfield">
+                <% if @status === 'Pending'%>
+                    <td><%= @hour.user.first_name + ' ' + @hour.user.last_name  %></td>
+                    <td><%= f.text_field :assignment, :value => @hour.assignment %></td>
+                    <td><%= f.number_field :hours, in: 0.5..12.0, step: 0.5, :value => @hour.hours %></td>
+                    <td> <%= f.text_field :supervisor, :value => @hour.supervisor %></td>
+                    <td><%= f.date_field :date, :value => @hour.date %></td>
+                    <td><%= f.hidden_field :status, :value => 'Confirmed'%>
+                      <%= f.submit 'Update'%></td>
+                <%else%>
+                    <td><%= @hour.user.first_name + ' ' + @hour.user.last_name  %></td>
+                    <td><%= @hour.assignment  %></td>
+                    <td><%= @hour.hours  %></td>
+                    <td><%= @hour.supervisor %></td>
+                    <td><%= @hour.date %></td>
+                    <td><%= @status %></td>
+                <%end%>
+          <%end%>
           <td><%= link_to 'Delete', hour_path(@hour), method: :delete %></td>
               </tr>
           </tbody>
