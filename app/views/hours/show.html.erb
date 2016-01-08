@@ -61,7 +61,7 @@
                 <td> <%= f.text_field :supervisor, :value => @hour.supervisor %></td>
                 <td><%= f.date_field :date, :value => @hour.date %></td>
                 <td><%= f.hidden_field :status, :value => 'Confirmed'%>
-                  <%= f.submit 'Update', @hour.update(params)%></td>
+                  <%= f.submit 'Update'%></td>
 
         <%end %>
           <td><%= link_to 'Delete', hour_path(@hour), method: :delete %></td>
