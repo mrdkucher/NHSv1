@@ -39,7 +39,7 @@
                 </div>
       -->
       <div class="table-responsive">
-        <%= form_for(:hour_log, method: :patch) do |f| %>
+        <%= form_for(@hour, url: hour_path, method: :patch) do |f| %>
         <table class="table table-striped">
           <thead>
           <tr id="dashtexttable">
@@ -61,7 +61,7 @@
                 <td> <%= f.text_field :supervisor, :value => @hour.supervisor %></td>
                 <td><%= f.date_field :date, :value => @hour.date %></td>
                 <td><%= f.hidden_field :status, :value => 'Confirmed'%>
-                  <%= f.submit 'Update'%></td>
+                  <%= f.submit 'Update', @hour.update(params)%></td>
 
         <%end %>
           <td><%= link_to 'Delete', hour_path(@hour), method: :delete %></td>

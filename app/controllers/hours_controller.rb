@@ -12,7 +12,7 @@ class HoursController < ApplicationController
   end
   def update
     @hour = HourLog.find(params[:id])
-    if @hour.update(update_hour_params)
+    if @hour.update_attributes(update_hour_params)
       redirect_to '/hours'
     else
       redirect_to "/hours/#{id}"
