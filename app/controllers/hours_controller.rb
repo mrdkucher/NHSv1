@@ -1,12 +1,12 @@
 class HoursController < ApplicationController
   before_action :require_user
-  before_action :require_admin, only: [:update, :index, :show]
+  before_action :require_admin, only: [:update, :index, :edit]
   def index
     @allhours = HourLog.where(status:'Pending')
     @allconfirm = HourLog.where(status:'Confirmed')
     @alltotal = HourLog.sum(:hours)
   end
-  def show
+  def edit
     @hour = HourLog.find(params[:id])
     @status = @hour.status
   end
