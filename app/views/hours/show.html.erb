@@ -39,7 +39,7 @@
                 </div>
       -->
       <div class="table-responsive">
-        <%= form_for(@hour, url: hour_path, method: :patch) do |f| %>
+        <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
         <table class="table table-striped">
           <thead>
           <tr id="dashtexttable">
