@@ -39,7 +39,7 @@
                 </div>
       -->
       <div class="table-responsive">
-
+        <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
         <table class="table table-striped">
           <thead>
           <tr id="dashtexttable">
@@ -55,7 +55,6 @@
 
               <tbody>
               <tr id="dashfield">
-                <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
                 <td><%= @hour.user.first_name + ' ' + @hour.user.last_name  %></td>
                 <td><%= f.text_field :assignment, :value => @hour.assignment %></td>
                 <td><%= f.number_field :hours, in: 0.5..12.0, step: 0.5, :value => @hour.hours %></td>
