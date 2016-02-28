@@ -55,7 +55,7 @@
             </tr>
             </thead>
             <tbody>
-            <% @allconfirm.defaulthour.each do |hour| %>
+            <% @allconfirm.each do |hour| %>
                 <tr id="dashfield">
                   <td><%= hour.user.first_name + " " +hour.user.last_name %></td>
                   <td><%= hour.assignment %></td>
