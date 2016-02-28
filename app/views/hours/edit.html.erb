@@ -42,31 +42,34 @@
                 </div>
       -->
       <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-          <tr id="dashtexttable">
-            <th>User</th>
-            <th>Assignment</th>
-            <th>Hours</th>
-            <th>Supervisor/Location</th>
-            <th>Date</th>
-            <th></th>
-            <th></th>
-          </tr>
-          </thead>
-        </table>
-        <div class="newhourform" id="dashtext">
-          <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
-              <%= @hour.user.first_name + ' ' + @hour.user.last_name %>
-              <%= f.text_field :assignment, :value => @hour.assignment %>
-              <%= f.number_field :hours, in: 0.5..12.0, step: 0.5, :value => @hour.hours %>
-              <%= f.text_field :supervisor, :value => @hour.supervisor %>
-              <%= f.date_field :date, :value => @hour.date %>
-              <td><%= f.hidden_field :status, :value => 'Confirmed' %>
-                <%= f.submit 'Update' %></td>
-          <% end %>
-          <%= link_to 'Delete', hour_path(@hour), method: :delete %>
+        <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
+            <table class="table table-striped">
+              <thead>
+              <tr id="dashtexttable">
+                <th>User</th>
+                <th>Assignment</th>
+                <th>Hours</th>
+                <th>Supervisor/Location</th>
+                <th>Date</th>
+                <th></th>
+                <th></th>
+              </tr>
+              </thead>
+              <tr>
+                <div class="newhourform" id="dashtext">
+                  <td><%= @hour.user.first_name + ' ' + @hour.user.last_name %></td>
+                  <td><%= f.text_field :assignment, :value => @hour.assignment %></td>
+                  <td><%= f.number_field :hours, in: 0.5..12.0, step: 0.5, :value => @hour.hours %></td>
+                  <td><%= f.text_field :supervisor, :value => @hour.supervisor %></td>
+                  <td><%= f.date_field :date, :value => @hour.date %></td>
+                  <td><%= f.hidden_field :status, :value => 'Confirmed' %>
+                    <%= f.submit 'Update' %></td>
+        <% end %>
+        <td><%= link_to 'Delete', hour_path(@hour), method: :delete %></td>
         </div>
+        </tr>
+        </table>
+
 
       </div>
     </div>
