@@ -10,6 +10,9 @@ class HoursController < ApplicationController
     @hour = HourLog.find(params[:id])
     @status = @hour.status
   end
+  def show
+    @allconfirm = HourLog.where(status:'Confirmed')
+  end
   def update
     @hour = HourLog.find(params[:id])
     if @hour.update_attributes(update_hour_params)
@@ -40,6 +43,6 @@ class HoursController < ApplicationController
     params.require(:hour_log).permit(:assignment, :hours, :supervisor, :date)
   end
   def update_hour_params
-    params.require(:hour_log).permit(:status)
+    params.require(:hour_log).permit(:assignment, :hours, :supervisor, :date, :status)
   end
 end

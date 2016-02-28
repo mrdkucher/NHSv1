@@ -1,19 +1,22 @@
 <body id="dash">
-  <div class="container-fluid">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar" id="dashtext">
       <ul class="nav nav-sidebar">
-        <li><a href='/hours/new' style= "color: #fff">Hours</a></li>
-        <li><a href='/leaderboard' style= "color: #fff">Leaderboard</a></li>
-        <li class="active"><a href='/hours'>Requests</a></li>
-        <li ><a href='/users' style= "color: #fff">Users</a></li>
+        <li><a href='/hours/new' style="color: #fff">Hours</a></li>
+        <li><a href='/leaderboard' style="color: #fff">Leaderboard</a></li>
+        <% if current_user && current_user.admin? %>
+            <li class="active"><a href='/hours' style="color: #fff">Pending Requests</a></li>
+            <li><a href='/hours/show' style= "color: #fff">Confirmed Requests</a></li>
+            <li><a href='/users' style="color: #fff">Users</a></li>
+        <% end %>
         <!--            <li><a href="#">Reports</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>         -->
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-      <!--<h1 class="page-header" id="dashtext">User Hours</h1>
+      <!-- <h1 class="page-header" id="dashtext">User Hours</h1>
 
                 <div class="row placeholders">
                   <div class="col-xs-6 col-sm-3 placeholder">
@@ -39,21 +42,21 @@
                 </div>
       -->
       <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-              <tr id="dashtexttable">
-                <th>User</th>
-                <th>Assignment</th>
-                <th>Hours</th>
-                <th>Supervisor/Location</th>
-                <th>Date</th>
-                <th></th>
-                <th></th>
-              </tr>
-              </thead>
-            </table>
-            <div class="newhourform" id="dashtext">
-              <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
+        <table class="table table-striped">
+          <thead>
+          <tr id="dashtexttable">
+            <th>User</th>
+            <th>Assignment</th>
+            <th>Hours</th>
+            <th>Supervisor/Location</th>
+            <th>Date</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+        </table>
+        <div class="newhourform" id="dashtext">
+          <%= form_for(@hour, url: hour_path(@hour.id), method: :patch) do |f| %>
               <%= @hour.user.first_name + ' ' + @hour.user.last_name %>
               <%= f.text_field :assignment, :value => @hour.assignment %>
               <%= f.number_field :hours, in: 0.5..12.0, step: 0.5, :value => @hour.hours %>
@@ -61,8 +64,8 @@
               <%= f.date_field :date, :value => @hour.date %>
               <td><%= f.hidden_field :status, :value => 'Confirmed' %>
                 <%= f.submit 'Update' %></td>
-        <% end %>
-        <%= link_to 'Delete', hour_path(@hour), method: :delete %>
+          <% end %>
+          <%= link_to 'Delete', hour_path(@hour), method: :delete %>
         </div>
 
       </div>

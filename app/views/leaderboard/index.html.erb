@@ -6,7 +6,8 @@
         <li><a href='/hours/new' style= "color: #fff">Hours</a></li>
         <li class="active"><a href='/leaderboard'>Leaderboard</a></li>
         <% if current_user && current_user.admin? %>
-            <li><a href='/hours' style="color: #fff">Requests</a></li>
+            <li><a href='/hours' style="color: #fff">Pending Requests</a></li>
+            <li><a href='/hours/show' style= "color: #fff">Confirmed Requests</a></li>
             <li><a href='/users' style="color: #fff">Users</a></li>
         <% end %>
         <!--           <li><a href="#">Reports</a></li>

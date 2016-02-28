@@ -5,8 +5,11 @@
       <ul class="nav nav-sidebar">
         <li><a href='/hours/new' style= "color: #fff">Hours</a></li>
         <li><a href='/leaderboard' style= "color: #fff">Leaderboard</a></li>
-        <li><a href='/hours' style= "color: #fff">Requests</a></li>
-        <li class="active"><a href='/users' style= "color: #fff">Users</a></li>
+        <% if current_user && current_user.admin? %>
+            <li><a href='/hours' style="color: #fff">Pending Requests</a></li>
+            <li><a href='/hours/show' style= "color: #fff">Confirmed Requests</a></li>
+            <li class="active"><a href='/users' style="color: #fff">Users</a></li>
+        <% end %>
         <!--           <li><a href="#">Reports</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>         -->
@@ -50,22 +53,22 @@
           </tr>
           </thead>
           <tbody>
-              <tr id="dashfield">
-                <td><%= @user.first_name%></td>
-                <td><%= @user.last_name %></td>
-                <td><%= @role %></td>
-                <td><% if @role == 'Admin'%>
+          <tr id="dashfield">
+            <td><%= @user.first_name%></td>
+            <td><%= @user.last_name %></td>
+            <td><%= @role %></td>
+            <td><% if @role == 'Admin'%>
                   <%= form_for @user, method: :put do |f|%>
-                  <%= f.hidden_field :role, :value => 'User'%>
-                  <%= f.submit 'Make User'%><%end%>
-                  <%else%>
+                      <%= f.hidden_field :role, :value => 'User'%>
+                      <%= f.submit 'Make User'%><%end%>
+              <%else%>
                   <%= form_for @user, method: :put do |f| %>
-                  <%= f.hidden_field :role, :value => 'Admin'%>
-                  <%= f.submit 'Make Admin'%>
+                      <%= f.hidden_field :role, :value => 'Admin'%>
+                      <%= f.submit 'Make Admin'%>
                   <%end%>
-                  <%end%></td>
-                <td><%= link_to 'Delete', user_path(@user), method: :delete %></td>
-              </tr>
+              <%end%></td>
+            <td><%= link_to 'Delete', user_path(@user), method: :delete %></td>
+          </tr>
           </tbody>
         </table>
       </div>

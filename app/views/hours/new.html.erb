@@ -1,94 +1,95 @@
 <body id="dash">
-  <div class="container-fluid">
-    <div class="row">
+<div class="container-fluid">
+  <div class="row">
 
-      <div class="col-sm-3 col-md-2 sidebar" id="dashtext">
-        <ul class="nav nav-sidebar">
-          <li class="active"><a href='/hours/new'>Hours</a></li>
-          <li><a href='/leaderboard' style= "color: #fff">Leaderboard</a></li>
-          <% if current_user && current_user.admin? %>
-              <li><a href='/hours' style="color: #fff">Requests</a></li>
-              <li><a href='/users' style="color: #fff">Users</a></li>
+    <div class="col-sm-3 col-md-2 sidebar" id="dashtext">
+      <ul class="nav nav-sidebar">
+        <li class="active"><a href='/hours/new'>Hours</a></li>
+        <li><a href='/leaderboard' style= "color: #fff">Leaderboard</a></li>
+        <% if current_user && current_user.admin? %>
+            <li><a href='/hours' style="color: #fff">Pending Requests</a></li>
+            <li><a href='/hours/show' style= "color: #fff">Confirmed Requests</a></li>
+            <li><a href='/users' style="color: #fff">Users</a></li>
+        <% end %>
+        <!--            <li><a href="#">Reports</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Export</a></li>         -->
+      </ul>
+    </div>
+
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <!--<h1 class="page-header" id="dashtext">Dashboard</h1>
+
+                <div class="row placeholders">
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 placeholder">
+                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                  </div>
+                </div>
+      -->
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr id="dashtexttable">
+            <th>Assignment</th>
+            <th>Hours</th>
+            <th>Supervisor/Location</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @entry.each do |hour| %>
+              <tr id="dashfield">
+                <td><%= hour.assignment %></td>
+                <td><%= hour.hours %></td>
+                <td><%= hour.supervisor %></td>
+                <td><%= hour.date %></td>
+                <td><%= hour.status %></td>
+              </tr>
           <% end %>
-          <!--            <li><a href="#">Reports</a></li>
-                      <li><a href="#">Analytics</a></li>
-                      <li><a href="#">Export</a></li>         -->
-        </ul>
+          <tr>
+            <td style="font-weight: bolder">Total Hours:</td>
+            <td style="font-weight: bolder"><%= @total %>/12</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
       </div>
 
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <!--<h1 class="page-header" id="dashtext">Dashboard</h1>
-
-                    <div class="row placeholders">
-                      <div class="col-xs-6 col-sm-3 placeholder">
-                        <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 placeholder">
-                        <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 placeholder">
-                        <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 placeholder">
-                        <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                      </div>
-                    </div>
-          -->
-
-            <div class="table-responsive">
-              <table class="table table-striped">
-                <thead>
-                <tr id="dashtexttable">
-                  <th>Assignment</th>
-                  <th>Hours</th>
-                  <th>Supervisor/Location</th>
-                  <th>Date</th>
-                  <th>Status</th>
-                </tr>
-                </thead>
-                <tbody>
-                <% @entry.each do |hour| %>
-                    <tr id="dashfield">
-                      <td><%= hour.assignment %></td>
-                      <td><%= hour.hours %></td>
-                      <td><%= hour.supervisor %></td>
-                      <td><%= hour.date %></td>
-                      <td><%= hour.status %></td>
-                    </tr>
-                <% end %>
-                <tr>
-                  <td style="font-weight: bolder">Total Hours:</td>
-                  <td style="font-weight: bolder"><%= @total %>/12</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-          <div class="newhourform">
-            <%= form_for(:hour_log, method: :post, html: {id: "dashform"}) do |f| %>
-                <%= f.text_field :assignment, :placeholder => "Assignment" %>
-                <%= f.number_field :hours, in: 0.5..12.0, step:0.5, :placeholder => "Hours" %>
-                <%= f.text_field :supervisor, :placeholder => "Supervisor/Location"%>
-                <%= f.date_field :date, :placeholder => "Date" %>
-                <%= f.hidden_field :status, :value => "pending" %>
-                <%= f.hidden_field :user_id, :value => current_user.id %>
-                <%= f.submit 'Create', class: "dashbtn" %>
-            <% end %>
-          </div>
-        </div>
+      <div class="newhourform">
+        <%= form_for(:hour_log, method: :post, html: {id: "dashform"}) do |f| %>
+            <%= f.text_field :assignment, :placeholder => "Assignment" %>
+            <%= f.number_field :hours, in: 0.5..12.0, step:0.5, :placeholder => "Hours" %>
+            <%= f.text_field :supervisor, :placeholder => "Supervisor/Location"%>
+            <%= f.date_field :date, :placeholder => "Date" %>
+            <%= f.hidden_field :status, :value => "pending" %>
+            <%= f.hidden_field :user_id, :value => current_user.id %>
+            <%= f.submit 'Create', class: "dashbtn" %>
+        <% end %>
       </div>
     </div>
   </div>
+</div>
+</div>
 </body>

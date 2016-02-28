@@ -3,20 +3,20 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar" id="dashtext">
       <ul class="nav nav-sidebar">
-        <li><a href='/hours/new' style= "color: #fff">Hours</a></li>
-        <li><a href='/leaderboard' style= "color: #fff">Leaderboard</a></li>
+        <li><a href='/hours/new' style="color: #fff">Hours</a></li>
+        <li><a href='/leaderboard' style="color: #fff">Leaderboard</a></li>
         <% if current_user && current_user.admin? %>
             <li><a href='/hours' style="color: #fff">Pending Requests</a></li>
-            <li><a href='/hours/show' style= "color: #fff">Confirmed Requests</a></li>
-            <li class="active"><a href='/users' style="color: #fff">Users</a></li>
+            <li class="active"><a href='/hours/show' style= "color: #fff">Confirmed Requests</a></li>
+            <li><a href='/users' style="color: #fff">Users</a></li>
         <% end %>
-        <!--           <li><a href="#">Reports</a></li>
+        <!--            <li><a href="#">Reports</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>         -->
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-      <!--<h1 class="page-header" id="dashtext">Users</h1>
+      <!-- <h1 class="page-header" id="dashtext">User Hours</h1>
 
                 <div class="row placeholders">
                   <div class="col-xs-6 col-sm-3 placeholder">
@@ -41,31 +41,43 @@
                   </div>
                 </div>
       -->
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-          <tr id="dashtexttable">
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Account Type</th>
-            <th></th>
-          </tr>
-          </thead>
-          <tbody>
-          <% @allusers.defaultuser.each do |user| %>
-              <tr id="dashfield">
-                <td><%= user.first_name%></td>
-                <td><%= user.last_name %></td>
-                <td><%= user.email %></td>
-                <td><%= user.role %></td>
-                <td><%= link_to "See User", user_path(user.id)%></td>
-              </tr>
-          <% end %>
+      <h2 class="sub-header" id="dashtext">Confirmed Hours</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr id="dashtext">
+              <th>User</th>
+              <th>Assignment</th>
+              <th>Hours</th>
+              <th>Supervisor/Location</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @allconfirm.each do |hour| %>
+                <tr id="dashfield">
+                  <td><%= hour.user.first_name + " " +hour.user.last_name %></td>
+                  <td><%= hour.assignment %></td>
+                  <td><%= hour.hours %></td>
+                  <td><%= hour.supervisor %></td>
+                  <td><%= hour.date %></td>
+                  <td><%= link_to "See Log", edit_hour_path(hour.id)%></td>
+                </tr>
+            <% end %>
+            <tr>
+              <td style="font-weight: bolder">Total Hours:</td>
+              <td style="font-weight: bolder"><%= @allconfirm.sum(:hours) %></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
 
-          </tbody>
-        </table>
+
       </div>
     </div>
   </div>
-</div>
