@@ -42,7 +42,8 @@
                 </div>
       -->
       <div class="table-responsive">
-        <table class="table table-striped">
+        <%=form_for(@user, method: :patch) do |d| %>
+        <table class="table table-striped table-hover table-bordered">
           <thead>
           <tr id="dashtexttable">
             <th>First Name</th>
@@ -67,10 +68,13 @@
                       <%= f.submit 'Make Admin'%>
                   <%end%>
               <%end%></td>
+            <td><%= d.password_field :password, :placeholder => "New Password" %></td>
+            <td><%= d.submit 'Update'%></td>
             <td><%= link_to 'Delete', user_path(@user), method: :delete %></td>
           </tr>
           </tbody>
         </table>
+        <%end%>
       </div>
     </div>
   </div>
